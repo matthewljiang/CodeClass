@@ -1,0 +1,16 @@
+<h1>Listing Rooms</h1>
+ 
+<table class = "table">
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @rooms.each do |room| %>
+    <tr>
+      <td><%= room.title %></td>
+      <td><%= room.description %></td>
+      <td><%= link_to 'Join', room %> <td>
+    </tr>
+  <% end %>
+</table>
