@@ -6,6 +6,7 @@ CodeClass::Application.routes.draw do
   resources :rooms
 
   get "welcome/index"
+  get "welcome/about"
   root "welcome#index"
   post "rooms/new"
   get "rooms/:id", :to => 'room#show'
